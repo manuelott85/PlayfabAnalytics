@@ -21,6 +21,8 @@ public:
 	void OnSuccess(const PlayFab::ClientModels::FLoginResult& Result) const;
 	void OnError(const PlayFab::FPlayFabCppError& ErrorResult) const;
 
+	void ShowTitelData(const PlayFab::ClientModels::FGetTitleDataResult& Result) const;
+
 	virtual void Tick(float DeltaSeconds) override;
 private:
 	PlayFabClientPtr clientAPI = nullptr;
